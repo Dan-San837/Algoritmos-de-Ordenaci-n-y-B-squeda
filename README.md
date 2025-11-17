@@ -39,6 +39,10 @@ prueba reproducibles.
 - Estrategia: Construye secuencia ordenada insertando elementos
 - Eficiente: Para datos parcialmente ordenados
 
+## Cómo Ejecutar
+Usar:
+- Java JDK 8 o superior
+- Cualquier IDE Java o línea de comandos
 
 ## Casos Borde Considerados
 ```bash
