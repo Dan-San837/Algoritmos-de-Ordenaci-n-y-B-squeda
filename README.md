@@ -58,22 +58,5 @@ E = [9, 1, 8, 2]       // Mixto sin duplicados
 - **Elementos duplicados**: Mantienen orden relativo (estabilidad)
 - **Arreglo ya ordenado**: Optimizaciones aplicables
 
-## Comparación de Recuentos de Movimientos/Intercambios
-|Algoritmo|Intercambios (Swaps)|Movimientos Internos|Caso Óptimo|Caso Pésimo|
-|----------------|--------------------------------|-----------------------------------|--------------------|--------------------|
-|**Bubble Sort**|Alto (múltiples por elemento)|Muy alto|0 swaps (ya ordenado)|O(n²) swaps|
-|**Selection Sort**|Mínimo (exactamente n-1)|Moderado|n-1 swaps|n-1 swaps|
-|**Insertion Sort**|Variable|Alto (desplazamientos)|O(n) movimientos|O(n²) movimientos|
 
-**Nota**: Selection Sort realiza exactamente n-1 intercambios sin importar la entrada, mientras que Bubble Sort puede realizar desde 0 hasta O(n²) intercambios.
-
-## Cuándo Usar Cada Algoritmo - Guía Práctica
-|Criterio|Bubble Sort|Selection Sort|Insertion Sort|
-|------------|------------------|----------------------|---------------------|
-|**Datos pequeños (n < 50)**|⚠️ Aceptable|✅ Bueno|✅ Excelente|
-|**Datos casi ordenados**|✅ Excelente (corte temprano)|❌ Pobre|✅ Óptimo|
-|**Minimizar intercambios**|❌ Pobre|✅ Excelente|✅ Bueno|
-|**Legibilidad de trazas**|✅ Muy claro (pasadas visibles)|✅ Claro (selecciones evidentes)|⚠️ Moderado|
-|**Estabilidad**|✅ Estable|❌ Inestable|✅ Estable|
-|**Uso educativo**|✅ Ideal para empezar|✅ Bueno para entender selección|✅ Bueno para entender inserción|
 
