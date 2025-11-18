@@ -11,10 +11,10 @@ public class SortingDemo {
         String[] datasetNames = {"A", "B", "C", "D", "E"};
 
         // Probar cada algoritmo
-        /* 
+
         testAlgorithm("Insertion Sort", datasets, datasetNames);
         testAlgorithm("Selection Sort", datasets, datasetNames);
-        */
+
         testAlgorithm("Bubble Sort", datasets, datasetNames);
 
         // Mostrar trazas detalladas para un dataset específico
@@ -36,14 +36,14 @@ public class SortingDemo {
             
             // Aplicar el algoritmo correspondiente
             switch (algorithmName) {
-                /* 
+
                 case "Insertion Sort":
                     InsertionSort.sort(array);
                     break;
                 case "Selection Sort":
                     SelectionSort.sort(array);
                     break;
-                */   
+
                 case "Bubble Sort":
                     BubbleSort.sort(array);
                     break;
@@ -61,14 +61,16 @@ public class SortingDemo {
         System.out.println("Array original: ");
         SortingUtils.printArray(testArray);
         
-        //System.out.println("\n--- Insertion Sort con trazas ---");
-        //InsertionSort.sort(testArray.clone(), true);
+        System.out.println("\n--- Insertion Sort con trazas ---");
+        InsertionSort.sort(testArray.clone(), true);
         
-        //System.out.println("\n--- Selection Sort con trazas ---");
-        //SelectionSort.sort(testArray.clone(), true);
+        System.out.println("\n--- Selection Sort con trazas ---");
+        SelectionSort.sort(testArray.clone(), true);
         
         System.out.println("\n--- Bubble Sort con trazas ---");
         BubbleSort.sort(testArray.clone(), true);
     }
+
+
     
 }

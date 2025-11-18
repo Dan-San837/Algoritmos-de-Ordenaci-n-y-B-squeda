@@ -56,7 +56,7 @@ public final class BubbleSort {
             }
         }
         
-        // Estadísticas finales para análisis comparativo
+        // Análisis comparativo
         if (trace) {
             System.out.println("Total de pasadas: " + passCount);
             System.out.println("Total de intercambios: " + swapCount);
